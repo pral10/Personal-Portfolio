@@ -10,6 +10,7 @@ import {
   faLaptopCode,
   faChartLine,
 } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import portfolioData from '../../data/portfolio.json'
 
 const projectIcons = {
@@ -98,16 +99,28 @@ const Portfolio = () => {
                     <span key={i} className="tech-badge">{tech.trim()}</span>
                   ))}
                 </div>
-                <button
-                  className="btn"
-                  aria-label={`View project: ${port.title}`}
-                  onClick={() => window.open(port.url, '_blank')}
-                >
-                  View Live Demo
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 3L11 8L6 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </button>
+                <div className="button-group">
+                  <button
+                    className="btn btn-primary"
+                    aria-label={`View live demo: ${port.title}`}
+                    onClick={() => window.open(port.url, '_blank')}
+                  >
+                    View Live Demo
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 3L11 8L6 13" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </button>
+                  {port.github && (
+                    <button
+                      className="btn btn-secondary"
+                      aria-label={`View source code: ${port.title}`}
+                      onClick={() => window.open(port.github, '_blank')}
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                      View Code
+                    </button>
+                  )}
+                </div>
               </div>
             </article>
           ))}

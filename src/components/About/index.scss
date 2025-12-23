@@ -27,10 +27,11 @@
     }
 
     .intro-text {
-      font-size: clamp(1.1rem, 2vw, 1.3rem);
-      color: #c5dbff;
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      color: #f5f9ff;
       line-height: 1.9;
       margin: 0;
+      font-weight: 400;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -57,7 +58,7 @@
     h2 {
       font-size: 2rem;
       font-weight: 700;
-      color: #a8d1ff;
+      color: #d0e9ff;
       margin: 0;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -97,7 +98,7 @@
         .company {
           font-size: 2rem;
           font-weight: 700;
-          color: #a8d1ff;
+          color: #d0e9ff;
           margin-bottom: 8px;
         }
 
@@ -120,9 +121,9 @@
             margin-top: 15px;
           }
 
-          span {
-            font-size: 0.9rem;
-            color: #b5d5ff;
+            span {
+            font-size: 1.05rem;
+            color: #e8f2ff;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -167,16 +168,16 @@
             flex: 1;
 
             h5 {
-              font-size: 1rem;
+              font-size: 1.15rem;
               font-weight: 600;
-              color: #a8d1ff;
+              color: #f0f7ff;
               margin: 0 0 8px 0;
             }
 
             p {
-              font-size: 0.9rem;
-              color: #b5d5ff;
-              line-height: 1.6;
+              font-size: 1.05rem;
+              color: #e8f2ff;
+              line-height: 1.7;
               margin: 0;
             }
           }
@@ -213,7 +214,7 @@
         .institution {
           font-size: 2rem;
           font-weight: 700;
-          color: #a8d1ff;
+          color: #d0e9ff;
           margin-bottom: 8px;
         }
 
@@ -238,7 +239,7 @@
 
           span {
             font-size: 0.9rem;
-            color: #b5d5ff;
+            color: #d8e8ff;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -250,7 +251,7 @@
 
             &.gpa {
               font-weight: 600;
-              color: #a8d1ff;
+              color: #f0f7ff;
             }
           }
         }
@@ -270,7 +271,7 @@
       .category-title {
         font-size: 1.5rem;
         font-weight: 600;
-        color: #a8d1ff;
+        color: #d0e9ff;
         margin-bottom: 25px;
       }
 
@@ -300,13 +301,13 @@
               flex: 1;
               font-size: 1rem;
               font-weight: 500;
-              color: #a8d1ff;
+              color: #d0e9ff;
             }
 
             .skill-level {
               font-size: 0.85rem;
               font-weight: 600;
-              color: #7ad7ff;
+              color: #a0e8ff;
             }
           }
 
@@ -339,9 +340,9 @@
     box-shadow: 0 4px 20px rgba(47, 137, 255, 0.2);
 
     p {
-      font-size: 1rem;
-      color: #b5d5ff;
-      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #e8f2ff;
+      line-height: 1.9;
       margin: 0;
       font-style: italic;
     }

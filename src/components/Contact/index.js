@@ -16,6 +16,10 @@ const Contact = () => {
     const timeoutId = setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
+    
+    // Initialize EmailJS
+    emailjs.init('klce0VK5mCVJLcAlK')
+    
     return () => clearTimeout(timeoutId)
   }, [])
 
@@ -27,24 +31,51 @@ const Contact = () => {
     
     if (isSubmitting) return
     
+    // Check if form reference exists
+    if (!form.current) {
+      console.error('Form reference is missing')
+      setSubmitStatus('error')
+      return
+    }
+    
     setIsSubmitting(true)
     setSubmitStatus(null)
 
     try {
+      console.log('Attempting to send email...')
+      console.log('Form data:', form.current)
+      
+      // Try with publicKey in options
       const result = await emailjs.sendForm(
         'service_w7fw9jy',
-        'template_vgj0qof',
+        'template_kjudox9',
         form.current,
-        'kmk1Hp6ZCqJDwd3vM'
+        'klce0VK5mCVJLcAlK'  // Passing as 4th parameter (string) instead of options object
       )
       
-      if (result.text === 'OK') {
+      console.log('EmailJS Result:', result)
+      console.log('Result status:', result.status)
+      console.log('Result text:', result.text)
+      
+      if (result.status === 200 || result.text === 'OK') {
         setSubmitStatus('success')
         form.current.reset()
         setTimeout(() => setSubmitStatus(null), 5000)
+      } else {
+        throw new Error(`Email sending failed: ${result.text || 'Unknown error'}`)
       }
     } catch (error) {
       console.error('EmailJS Error:', error)
+      console.error('Error type:', typeof error)
+      console.error('Error details:', {
+        message: error.text || error.message,
+        status: error.status,
+        code: error.code,
+        serviceId: 'service_w7fw9jy',
+        templateId: 'template_kjudox9',
+        formExists: !!form.current,
+        formElements: form.current ? Array.from(form.current.elements).map(el => ({ name: el.name, value: el.value })) : null
+      })
       setSubmitStatus('error')
       setTimeout(() => setSubmitStatus(null), 5000)
     } finally {

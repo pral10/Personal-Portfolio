@@ -34,9 +34,9 @@
 }
 
 .container.contact-page .text-zone h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(3rem, 6vw, 4.5rem);
   font-weight: 900;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   letter-spacing: 2px;
   color: #4fc3f7;
   text-shadow: 0 2px 8px rgba(79, 195, 247, 0.4);
@@ -46,9 +46,10 @@
 
 .container.contact-page .text-zone p {
   margin-bottom: 30px;
-  color: #c5dbff;
-  font-size: clamp(1rem, 2vw, 1.15rem);
-  line-height: 1.8;
+  color: #f5f9ff;
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+  line-height: 1.9;
+  font-weight: 400;
 }
 
 .container.contact-page .contact-form ul {
@@ -71,19 +72,20 @@
 .container.contact-page .contact-form ul li input,
 .container.contact-page .contact-form ul li textarea {
   width: 100%;
-  padding: 14px 18px;
+  padding: 16px 20px;
   border: 2px solid rgba(79, 195, 247, 0.3);
   border-radius: 8px;
   background: rgba(18, 37, 58, 0.6);
-  color: #e0f0ff;
-  font-size: 1rem;
+  color: #f5f9ff;
+  font-size: 1.1rem;
   font-weight: 400;
   transition: all 0.3s ease;
   font-family: 'Helvetica Neue', sans-serif;
 
   &::placeholder {
-    color: #8da5c4;
-    opacity: 0.7;
+    color: #b8c8e0;
+    opacity: 0.9;
+    font-size: 1.05rem;
   }
 }
 
@@ -113,8 +115,8 @@
   width: 100%;
   background: linear-gradient(135deg, #4fc3f7 0%, #63a8ff 100%);
   border: none;
-  padding: 16px 0;
-  font-size: 1.1rem;
+  padding: 18px 0;
+  font-size: 1.2rem;
   font-weight: 700;
   border-radius: 8px;
   cursor: pointer;
@@ -147,10 +149,10 @@
 .container.contact-page .contact-form .success-message {
   margin-top: 15px;
   color: #4ade80;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 500;
   text-align: center;
-  padding: 12px;
+  padding: 14px;
   background: rgba(74, 222, 128, 0.1);
   border-radius: 8px;
   border: 1px solid rgba(74, 222, 128, 0.3);
@@ -161,10 +163,10 @@
 .container.contact-page .contact-form .error-message {
   margin-top: 15px;
   color: #f87171;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 500;
   text-align: center;
-  padding: 12px;
+  padding: 14px;
   background: rgba(248, 113, 113, 0.1);
   border-radius: 8px;
   border: 1px solid rgba(248, 113, 113, 0.3);
@@ -217,8 +219,8 @@
     }
 
     h3 {
-      color: #a8d1ff;
-      font-size: 1.5rem;
+      color: #f0f7ff;
+      font-size: 1.7rem;
       font-weight: 700;
       margin: 0 0 25px 0;
       text-align: center;
@@ -255,23 +257,23 @@
         }
 
         .contact-link {
-          color: #7ad7ff;
+          color: #c8f0ff;
           text-decoration: none;
           font-weight: 500;
-          font-size: 1rem;
+          font-size: 1.1rem;
           transition: all 0.3s ease;
           flex: 1;
 
           &:hover {
-            color: #a8d1ff;
+            color: #f0f7ff;
             text-shadow: 0 0 10px rgba(168, 209, 255, 0.5);
           }
         }
 
         .contact-text {
-          color: #7ad7ff;
+          color: #c8f0ff;
           font-weight: 500;
-          font-size: 1rem;
+          font-size: 1.1rem;
         }
       }
     }
