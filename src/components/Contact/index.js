@@ -4,7 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faPhone, faMapMarkerAlt, faLinkedin, faGithub } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone, faMapMarkerAlts} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin as faLinkedinBrand, faGithub as faGithubBrand } from '@fortawesome/free-brands-svg-icons'
 import './index.scss'
 
