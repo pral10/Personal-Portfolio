@@ -1,0 +1,34 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/1/weather.png",
+            "title": "Weather App",
+            "description": "React, Vite, Luxon, React Icons, Tailwind CSS, React Toastify - Real-time weather data with modern UI",
+            "url": "https://sparkly-pastelito-1e4cb8.netlify.app/"
+        },
+        {
+            "cover": "/portfolio/1/snake.png",
+            "title": "Snake Game",
+            "description": "Python, Pygame, Asynchronous Programming, File I/O - Classic game with modern implementation",
+            "url": "https://replit.com/@chaulagainprala/Python?v=1&fbclid=IwAR3v-FjQru6wwrx0YOFIi-TNipJ-ylk0H1DgYHxejECUbdPv6VXt1C-ddrY#main.py"
+        },
+        {
+            "cover": "/portfolio/1/two.png",
+            "title": "Calculator",
+            "description": "HTML, CSS, JavaScript - Responsive calculator with clean interface and smooth animations",
+            "url": "https://willowy-frangollo-8ef338.netlify.app/"
+        },
+        {
+            "cover": "/portfolio/1/three.png",
+            "title": "Portfolio Website",
+            "description": "React, JSX, Tailwind - Modern portfolio showcasing projects and professional experience",
+            "url": "https://astounding-rugelach-2966a3.netlify.app/"
+        },
+        {
+            "cover": "/portfolio/1/four.png",
+            "title": "Interest Calculator",
+            "description": "HTML, CSS, JavaScript - Financial calculator for computing compound interest and loan calculations",
+            "url": "https://sprightly-creponne-fc78b9.netlify.app/"
+        }
+    ]
+}

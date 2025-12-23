@@ -1,0 +1,80 @@
+.logo-container {
+  z-index: 1;
+  width: clamp(300px, 40vw, 450px);
+  height: auto;
+  opacity: 0;
+  position: relative;
+  flex: 0 0 auto;
+  margin: auto;
+  animation: fadeIn 1s ease-out forwards;
+  transition: transform 0.3s ease;
+
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 
+      0 20px 60px rgba(79, 195, 247, 0.3),
+      0 0 80px rgba(79, 195, 247, 0.2);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 
+        0 30px 80px rgba(79, 195, 247, 0.4),
+        0 0 100px rgba(79, 195, 247, 0.3);
+    }
+
+    .image-glow {
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(79, 195, 247, 0.3) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+    }
+
+    &:hover .image-glow {
+      opacity: 1;
+    }
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: brightness(1.05) contrast(1.05);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Responsive
+@media (max-width: 1024px) {
+  .logo-container {
+    width: clamp(250px, 35vw, 350px);
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    width: 280px;
+    margin: 30px auto;
+  }
+}
