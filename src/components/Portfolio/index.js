@@ -9,6 +9,7 @@ import {
   faCalculator,
   faLaptopCode,
   faChartLine,
+  faWifi,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import portfolioData from '../../data/portfolio.json'
@@ -19,6 +20,7 @@ const projectIcons = {
   'Calculator': faCalculator,
   'Portfolio Website': faLaptopCode,
   'Interest Calculator': faChartLine,
+  'smartIoT': faWifi,
 }
 
 const projectGradients = {
@@ -27,6 +29,7 @@ const projectGradients = {
   'Calculator': ['#66bb6a', '#81c784', '#a5d6a7'],
   'Portfolio Website': ['#ab47bc', '#ba68c8', '#ce93d8'],
   'Interest Calculator': ['#42a5f5', '#64b5f6', '#90caf9'],
+  'smartIoT': ['#26a69a', '#4db6ac', '#80cbc4'],
 }
 
 const Portfolio = () => {
@@ -51,8 +54,8 @@ const Portfolio = () => {
             />
           </h1>
           <p className="portfolio-subtitle">
-            A curated selection of projects demonstrating expertise in full-stack development, embedded systems, and software engineering. 
-            From modern web applications to performance-optimized solutions.
+            Projects showcasing full-stack development, embedded systems work, and software engineering practices. 
+            Includes web applications, tools, and implementations across different tech stacks.
           </p>
         </div>
 

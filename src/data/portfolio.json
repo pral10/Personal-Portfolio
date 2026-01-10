@@ -3,37 +3,44 @@
         {
             "cover": "/portfolio/1/weather.png",
             "title": "Weather App",
-            "description": "React, Vite, Luxon, React Icons, Tailwind CSS, React Toastify - Real-time weather data with modern UI",
+            "description": "React, Vite, Luxon, React Icons, Tailwind CSS, React Toastify - Weather application fetching real-time data from OpenWeatherMap API with responsive UI and timezone handling",
             "url": "https://sparkly-pastelito-1e4cb8.netlify.app/",
             "github": "https://github.com/pral10/weatherapp"
         },
         {
             "cover": "/portfolio/1/snake.png",
             "title": "Snake Game",
-            "description": "Python, Pygame, Asynchronous Programming, File I/O - Classic game with modern implementation",
+            "description": "Python, Pygame, Asynchronous Programming, File I/O - Classic Snake game implementation with score tracking, collision detection, and persistent high score storage",
             "url": "https://replit.com/@chaulagainprala/Python?v=1&fbclid=IwAR3v-FjQru6wwrx0YOFIi-TNipJ-ylk0H1DgYHxejECUbdPv6VXt1C-ddrY#main.py",
             "github": "https://github.com/pral10/snake-game"
         },
         {
             "cover": "/portfolio/1/two.png",
             "title": "Calculator",
-            "description": "HTML, CSS, JavaScript - Responsive calculator with clean interface and smooth animations",
+            "description": "HTML, CSS, JavaScript - Full-featured calculator with keyboard support, expression evaluation, and responsive design",
             "url": "https://willowy-frangollo-8ef338.netlify.app/",
             "github": "https://github.com/pral10/Calculator"
         },
         {
             "cover": "/portfolio/1/three.png",
             "title": "Portfolio Website",
-            "description": "React, JSX, Tailwind - Modern portfolio showcasing projects and professional experience",
+            "description": "React, SCSS, EmailJS, React Router - Professional portfolio site with animated components, interactive contact form, and responsive layout",
             "url": "https://astounding-rugelach-2966a3.netlify.app/",
             "github": "https://github.com/pral10/Personal-Portfolio"
         },
         {
             "cover": "/portfolio/1/four.png",
             "title": "Interest Calculator",
-            "description": "HTML, CSS, JavaScript - Financial calculator for computing compound interest and loan calculations",
+            "description": "HTML, CSS, JavaScript - Financial calculator supporting compound interest calculations, loan amortization, and investment projections",
             "url": "https://sprightly-creponne-fc78b9.netlify.app/",
             "github": "https://github.com/pral10/small-projects"
+        },
+        {
+            "cover": "/portfolio/1/smartiot.png",
+            "title": "smartIoT",
+            "description": "React, Node.js, Firebase, ML Algorithms - Production-ready IoT monitoring platform with real-time sensor data, ML-powered temperature predictions, and comprehensive alert system",
+            "url": "https://smartiotjs.netlify.app/",
+            "github": "https://github.com/pral10/SmartIoT"
         }
     ]
 }

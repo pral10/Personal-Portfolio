@@ -65,29 +65,29 @@ const About = () => {
       period: 'January 2024 - Present',
       achievements: [
         {
-          icon: faRocket,
-          title: 'UI Enhancement & Training Reduction',
-          description: 'Delivered enhanced user interface through C++ modernization, reducing operator training time by 25%'
+          icon: faCog,
+          title: 'Legacy System Modernization',
+          description: 'Refactored LynxOS embedded codebase into event-driven C++ architecture, reducing CPU usage by 30% and improving maintainability'
         },
         {
-          icon: faCode,
-          title: 'Defect Resolution Excellence',
-          description: 'Resolved ~5 defects per sprint using advanced debugging techniques, improving system stability'
+          icon: faRocket,
+          title: 'UI Modernization',
+          description: 'Modernized C++ UI components, resulting in 25% reduction in operator training time and improved user experience'
         },
         {
           icon: faChartLine,
-          title: 'Build Tool Redesign',
-          description: 'Rewrote legacy build tools, increasing team efficiency by 20% and streamlining workflows'
+          title: 'Build System Redesign',
+          description: 'Redesigned legacy build tooling from scratch, cutting build times and increasing team productivity by 20%'
         },
         {
-          icon: faCog,
-          title: 'Legacy Code Refactoring',
-          description: 'Transformed LynxOS embedded code into event-driven C++ architecture, achieving 30% CPU reduction'
+          icon: faCode,
+          title: 'Quality & Stability',
+          description: 'Resolved critical system defects averaging 5 per sprint, improving overall system reliability through systematic debugging'
         },
         {
           icon: faBriefcase,
-          title: 'Release Management',
-          description: 'Led build creation and testing for 5 successful software releases, ensuring on-time delivery'
+          title: 'Release Delivery',
+          description: 'Owned build pipeline and testing for 5 software releases, maintaining on-time delivery with zero deployment issues'
         }
       ]
     },
@@ -98,19 +98,14 @@ const About = () => {
       period: 'September 2022 - January 2023',
       achievements: [
         {
-          icon: faFlask,
-          title: 'Visual Recognition Research',
-          description: 'Conducted extensive research on visual recognition techniques for defect identification and decision-making processes'
-        },
-        {
           icon: faBrain,
-          title: 'Machine Learning Implementation',
-          description: 'Employed Python and ML algorithms to analyze visual data patterns and accurately predict outcomes'
+          title: 'ML-Based Visual Recognition',
+          description: 'Developed Python-based ML models for automated defect identification from visual data, achieving accurate pattern recognition and prediction'
         },
         {
-          icon: faCode,
-          title: 'ML Techniques Proficiency',
-          description: 'Acquired proficiency in machine learning techniques for visual representation identification'
+          icon: faFlask,
+          title: 'Research & Data Analysis',
+          description: 'Conducted research on visual recognition algorithms, implemented data processing pipelines, and documented findings for academic review'
         }
       ]
     }
@@ -136,9 +131,9 @@ const About = () => {
             />
           </h1>
           <p className="intro-text">
-            Experienced Software Engineer at Raytheon with expertise in C++ modernization, embedded systems, and legacy code transformation. 
-            Proven track record of improving system performance by 30%, reducing training time by 25%, and increasing team efficiency by 20%. 
-            Passionate about building robust, scalable solutions and continuously learning new technologies.
+            Software Engineer working on embedded systems and C++ modernization at Raytheon. 
+            I focus on refactoring legacy code, optimizing performance, and improving developer workflows. 
+            Previously did research on ML-based visual recognition at UMass Boston.
           </p>
         </div>
 
@@ -234,9 +229,8 @@ const About = () => {
           {/* Personal Note */}
           <div className="personal-note fade-in">
             <p>
-              When I'm not coding, you'll find me exploring new technologies, working on side projects, 
-              or enjoying sports. I believe in continuous learning and pushing boundaries to create 
-              solutions that make a real impact.
+              I enjoy working on side projects, learning new technologies, and occasionally watching sports. 
+              Always looking for opportunities to solve interesting problems and build things that matter.
             </p>
             </div>
         </div>
