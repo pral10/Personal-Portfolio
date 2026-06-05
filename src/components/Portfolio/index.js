@@ -30,6 +30,7 @@ const projectGradients = {
   'Portfolio Website': ['#ab47bc', '#ba68c8', '#ce93d8'],
   'Interest Calculator': ['#42a5f5', '#64b5f6', '#90caf9'],
   'smartIoT': ['#26a69a', '#4db6ac', '#80cbc4'],
+  'AI ATS System': ['#6366f1', '#8b5cf6', '#a78bfa'],
 }
 
 const Portfolio = () => {

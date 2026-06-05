@@ -41,6 +41,13 @@
             "description": "React, Node.js, Firebase, ML Algorithms - Production-ready IoT monitoring platform with real-time sensor data, ML-powered temperature predictions, and comprehensive alert system",
             "url": "https://smartiotjs.netlify.app/",
             "github": "https://github.com/pral10/SmartIoT"
+        },
+        {
+            "cover": "/portfolio/1/ats.png",
+            "title": "AI ATS System",
+            "description": "Flask, OpenAI, HTML, CSS, JavaScript - AI-powered resume analyzer that evaluates candidates against job descriptions, generates match scores, skill gaps, risk factors, and structured hiring insights using LLMs.",
+            "url": "https://ai-ats-3n58.onrender.com/",
+            "github": "https://github.com/pral10/AI_ATS"
         }
     ]
 }
