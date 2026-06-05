@@ -2,12 +2,35 @@ import React, { useState, useRef } from 'react'
 import './chatbot.scss'
 import { getBotResponse } from './chatbot'
 
-const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY
+const OPENAI_API_KEY = process.env.REACT_APP_OPENAI_API_KEY
+console.log("ENV KEY:", OPENAI_API_KEY)
 
 const SYSTEM_PROMPT = `
-You are Praladh's AI assistant.
-Answer questions about his skills, experience, projects, and background.
-Be helpful, concise, and professional.
+You are an AI assistant for Praladh Chaulagain.
+
+Use ONLY the information below. Do NOT guess or fabricate anything.
+
+ABOUT:
+- Software Engineer skilled in Java, Python, C++, JavaScript, React
+- Works on embedded systems and full-stack applications
+
+EXPERIENCE:
+- Software Engineer at Raytheon Missiles & Defense
+- Focus: C++ modernization, embedded systems, backend systems
+
+PROJECTS:
+- Weather App (React, OpenWeather API)
+- Snake Game (Python, Pygame)
+- Calculator (JS)
+- Smart IoT system (React, Node, Firebase, ML)
+
+CONTACT:
+- Email: chaulagainpraladh@gmail.com
+- Location: Tewksbury, Massachusetts
+
+RULES:
+- If information is not present above, say: "I don't have that information on Praladh's portfolio."
+- Never guess or hallucinate.
 `
 
 const ChatBot = () => {
